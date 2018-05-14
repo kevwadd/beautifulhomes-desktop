@@ -20,6 +20,9 @@ Template Name: What We Do Page
 <div class="container">
 	<div class="row">
 		<div class="col-7 main-txt">
+		<?php if (!has_post_thumbnail()) { ?>
+		<h1><?php the_title(); ?></h1>
+		<?php } ?>
 		<?php the_content(); ?>
 		</div>
 		<div class="col-1"></div>
