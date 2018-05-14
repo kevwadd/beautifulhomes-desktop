@@ -9,8 +9,8 @@ $team_biogs = get_field('team_biogs', 'options');
 	<h3>Meet the team</h3>
 	<img src="<?php echo $team_img[0]; ?>" class="img-fluid" style="margin-bottom: 20px;">
 	<?php foreach ($team_biogs as $biog) { ?>
-	<h4><?php echo $biog[name]; ?></h4>
-	<h5><?php echo $biog[role]; ?></h5>
-	<p><?php echo $biog[biog]; ?></p>
+	<h4><?php echo $biog['name']; ?></h4>
+	<h5><?php echo $biog['role']; ?></h5>
+	<p><?php echo $biog['biog']; ?></p>
 	<?php } ?>
 </aside>
