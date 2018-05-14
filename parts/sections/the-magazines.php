@@ -23,7 +23,7 @@ $last_key = key($comp_slides);
 					$img_2 = wp_get_attachment_image_src($slide['mag_logo_2'], 'full'); 	
 					?>
 					<a href="<?php echo $slide['mag_website_2']; ?>" target="_blank" style="background-image: url(<?php echo $img_2[0]; ?>)" class="block">
-						<span class="sr-only"><?php echo $slide['mag_name_2]'; ?></span>	
+						<span class="sr-only"><?php echo $slide['mag_name_2']; ?></span>	
 					</a>
 				</div>
 				<div class="col-4">
