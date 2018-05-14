@@ -1,0 +1,1 @@
+!function($){$(document).ready(function(){console.log("ready")}),$(window).on("resize",function(o){}),$(window).on("load",function(o){console.log("loaded"),$("div[data-src]").each(function(o,n){console.log(n);var c=$(n).data("src");void 0!==c&&$(n).css("background-image","url("+c+")").parent().removeClass("loading")})}),$(window).on("scroll",function(o){})}(window.jQuery);

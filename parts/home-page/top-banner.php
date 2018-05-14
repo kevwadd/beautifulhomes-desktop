@@ -1,10 +1,15 @@
 <?php
-$sticky = get_option( 'sticky_posts' );
-$top_post = get_post($sticky[0]);
-$author_id = $top_post->post_author;
-$feat_img = get_the_post_thumbnail_url($top_post->ID, 'thumbnail');
-$feat_img_lg = get_the_post_thumbnail_url($top_post->ID, 'full');
-echo '<pre>';print_r($feat_img);echo '</pre>';	
+$banner_post_args = array(
+	'posts_per_page'   => 1
+);
+$banner_post = get_posts($banner_post_args);
+$author_id = $banner_post[0]->post_author;
+$feat_img = get_the_post_thumbnail_url($banner_post[0]->ID, 'thumbnail');
+$feat_img_lg = get_the_post_thumbnail_url($banner_post[0]->ID, 'full');
+$words_by = get_field('words_by', $banner_post[0]->ID);
+$photos_by = get_field('photos_by', $banner_post[0]->ID);
+
+//echo '<pre>';print_r($words_by);echo '</pre>';	
 ?>
 
 <section id="hp-banner" class="top-banner">
@@ -12,16 +17,25 @@ echo '<pre>';print_r($feat_img);echo '</pre>';
 		<div class="row">
 		<div class="col-8">
 			<div class="banner-img loading">
-				<div class="img" data-img-full="<?php echo $feat_img_lg; ?>" style="background-image: url(<?php echo $feat_img; ?>)"></div>
+				<div class="img" data-src="<?php echo $feat_img_lg; ?>" style="background-image: url(<?php echo $feat_img; ?>)"></div>
 			</div>
 		</div>
 		<div class="col-4">
-			<div class="banner-txt">
+			<div class="banner-txt d-flex flex-column">
 				<div class="cat-label caps text-center"><span>Category</span></div>
-				<h2><a href="<?php echo get_permalink($top_post->ID); ?>"><?php echo get_the_title($sticky[0]); ?></a></h2>
+				<div class="headline d-flex align-self-stretch">
+					<a href="<?php echo get_permalink($banner_post[0]->ID); ?>" class="align-self-center"><?php echo get_the_title($banner_post[0]); ?></a>
+				</div>
 				<div class="post-meta">
-					<?php the_author_meta( 'user_nicename' , $author_id ); ?><br>
-					<?php echo get_the_date( 'F d, Y', $top_post ); ?>
+					<?php if (!empty($words_by)) { ?>
+					Words: <?php echo $words_by[display_name]; ?><br>
+					<?php } else { ?>
+					Words: <?php the_author_meta( 'display_name' , $author_id ); ?><br>
+					<?php } ?>
+					<?php if (!empty($photos_by)) { ?>
+					Photography: <?php echo $photos_by[display_name]; ?><br>
+					<?php } ?>
+					<?php echo get_the_date( 'F j, Y', $top_post ); ?>
 				</div>
 			</div>
 		</div>

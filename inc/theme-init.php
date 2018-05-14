@@ -13,9 +13,9 @@ function bhn_setup() {
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'main' => __( 'Main Links', 'beautifulhomes' ),
-		'social'  => __( 'Social Links', 'beautifulhomes' ),
 		'footer_left'  => __( 'Footer Left Links', 'beautifulhomes' ),
-		'footer_right'  => __( 'Footer Right Links', 'beautifulhomes' )
+		'footer_right'  => __( 'Footer Right Links', 'beautifulhomes' ),
+		'footer_bottom'  => __( 'Footer Bottom Links', 'beautifulhomes' )
 	) );
 
 	add_theme_support( 'html5', array(

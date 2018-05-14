@@ -1,0 +1,222 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+/* BASE SIZES */
+/* COLORS */
+@import url(https://fonts.googleapis.com/css?family=Signika+Negative);
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+.header-lrg {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+}
+.header-caps {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+  text-transform: uppercase;
+}
+.Orbit-font {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+}
+/* LINKS */
+.no-text-dec {
+  text-decoration: none;
+}
+.underline {
+  text-decoration: underline;
+}
+/* TEXT */
+.col-gray {
+  color: #a7a9ac;
+}
+.caps {
+  text-transform: uppercase;
+}
+.no-caps {
+  text-transform: none;
+}
+.normal {
+  font-weight: normal;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.list-style-gone {
+  list-style: none;
+  padding-left: 0px;
+}
+/* BACKGROUND */
+/* SIZE */
+/* DISPLAY */
+.block {
+  display: block;
+}
+.none {
+  display: none;
+}
+.in-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
+.over-hide {
+  overflow: hidden;
+}
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.no-float {
+  float: none;
+}
+.clear {
+  clear: both;
+}
+/* POSITION */
+.abs {
+  position: absolute;
+}
+.rel {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
+/* MARGIN */
+.mag-auto {
+  margin: auto;
+}
+/* PADDING */
+/* BORDERS */
+.no-border {
+  border: none;
+}
+html {
+  background: #fff;
+  min-height: 100%;
+}
+body {
+  background: #fff;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+#error-page {
+  margin-top: 0px;
+  padding-top: 600px;
+  min-height: 800px;
+  font-size: 24px;
+  line-height: 28px;
+}
+#error-page h1 {
+  border-bottom: none;
+}
+#error-page p {
+  margin: 0px;
+}
+#error-page #custom_html-2 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 550px;
+  background-color: #b9b9b9;
+  background-image: url(/wp-content/themes/beautifulhomes-desktop/assets/css/img/holding-page-bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+#error-page #custom_html-2 .textwidget {
+  width: 500px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  padding: 10px 20px 0px 20px;
+  transform: translateX(-50%);
+}
+#error-page #custom_html-2 .textwidget h2 {
+  background-image: url(/wp-content/themes/beautifulhomes-desktop/assets/css/img/beautiful-homes-in-the-north-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  height: 90px;
+  width: 460px;
+  margin-bottom: 0px;
+}
+#error-page h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+  text-transform: uppercase;
+  color: #a7a9ac;
+  font-size: 40px;
+}
+#error-page p {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+#error-page #custom_html-3 {
+  text-align: center;
+  margin-top: 60px;
+  padding: 0px 15px 50px 15px;
+  font-weight: 300;
+  border-top: 1px solid #6d6e71;
+}
+#error-page #custom_html-3 .widgettitle {
+  background-color: white;
+  font-size: 25px;
+  line-height: 50px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+  text-transform: uppercase;
+  width: 20%;
+  min-width: 200px;
+  margin: -25px auto 30px auto;
+  border: 1px solid #6d6e71;
+  color: #a7a9ac;
+}
+#error-page #custom_html-3 a#login-btn {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  padding: 10px 20px;
+  color: #6d6e71;
+  text-decoration: none;
+  opacity: 0.3;
+  border: 1px solid #6d6e71;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+}
+#error-page #custom_html-3 a#login-btn:hover,
+#error-page #custom_html-3 a#login-btn:active,
+#error-page #custom_html-3 a#login-btn:focus {
+  opacity: 1;
+}

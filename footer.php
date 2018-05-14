@@ -1,5 +1,11 @@
-		<?php get_template_part( 'parts/global/rate', 'myroom' ); ?>
+		<?php get_template_part( 'parts/sections/the', 'magazines' ); ?>
 		
+		<?php  
+		$rate_my_rooms_pg = get_page_by_path('rate-my-rooms');	
+		if ($post->ID != $rate_my_rooms_pg->ID) {	
+		?>
+		<?php get_template_part( 'parts/global/rate', 'myroom' ); ?>
+		<?php } ?>
 		</main><!-- #content -->
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
