@@ -4,7 +4,7 @@
 			<?php wp_nav_menu(array( 
 			'container' => 'false', 
 			'menu' => 'Footer left nav', 
-			'menu_class'  => 'list-unstyled',
+			'menu_class'  => 'list-unstyled footer-nav',
 			'fallback_cb' => false 
 			) ); 
 			?>
@@ -15,7 +15,7 @@
 		<?php wp_nav_menu(array( 
 			'container' => 'false', 
 			'menu' => 'Footer right nav', 
-			'menu_class'  => 'list-unstyled',
+			'menu_class'  => 'list-unstyled footer-nav',
 			'fallback_cb' => false 
 			) ); 
 		?>
