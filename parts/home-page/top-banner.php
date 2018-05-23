@@ -28,12 +28,12 @@ $photos_by = get_field('photos_by', $banner_post[0]->ID);
 				</div>
 				<div class="post-meta">
 					<?php if (!empty($words_by)) { ?>
-					Words: <?php echo $words_by[display_name]; ?><br>
+					Words: <?php echo $words_by['display_name']; ?><br>
 					<?php } else { ?>
 					Words: <?php the_author_meta( 'display_name' , $author_id ); ?><br>
 					<?php } ?>
 					<?php if (!empty($photos_by)) { ?>
-					Photography: <?php echo $photos_by[display_name]; ?><br>
+					Photography: <?php echo $photos_by['display_name']; ?><br>
 					<?php } ?>
 					<?php echo get_the_date( 'F j, Y', $top_post ); ?>
 				</div>
