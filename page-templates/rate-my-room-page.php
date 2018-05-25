@@ -10,7 +10,7 @@ Template Name: Rate My Room Page
 	$feat_img = get_the_post_thumbnail_url($post->ID, 'banner-mb-400-133'); 
 	$feat_img_lg = get_the_post_thumbnail_url($post->ID, 'banner-dt-1500-500');
 	$form = get_field('form');
-	//echo '<pre>';print_r($form);echo '</pre>';
+	echo '<pre>';print_r($form);echo '</pre>';
 	?>
 	<div class="banner-img-slim loading">
 		<div class="container">
