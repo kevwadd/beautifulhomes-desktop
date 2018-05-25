@@ -19,12 +19,12 @@ $photos_by = get_field('photos_by');
 				<div class="col-4 text-right">
 					<i class="fa fa-pencil"></i> 
 					<?php if (!empty($words_by)) { ?>
-					<?php echo $words_by[display_name]; ?>
+					<?php echo $words_by['display_name']; ?>
 					<?php } else { ?>
 					<?php the_author_meta( 'display_name' , $author_id ); ?>
 					<?php } ?>
 					<?php if (!empty($photos_by)) { ?>
-					 | <i class="fa fa-camera"></i>  <?php echo $photos_by[display_name]; ?>
+					 | <i class="fa fa-camera"></i>  <?php echo $photos_by['display_name']; ?>
 					<?php } ?>
 				</div>
 			</div>
