@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Rate My Room Page
+Template Name: Contact us
 */
 ?>
 <?php get_header(); ?>
@@ -21,19 +21,24 @@ Template Name: Rate My Room Page
 	<?php } ?>
 	<article <?php post_class('single-post'); ?>>
 		<div class="container">
-			<div class="main-txt">
-				<?php if (!has_post_thumbnail()) { ?>
-				<h1><?php the_title(); ?></h1>
-				<?php } ?>
-				<?php the_content(); ?>
+			<div class="row">
+				<div class="col-6 text-center">
+					<h3>For words</h3>
+					<p class="lead">Karen Wilson</p>
+					<a href="mailto:" class="btn btn-light btn-lg btn-block"><i class="fa fa-envelope pull-left"></i>karen@beautifulhomesnorth.co.uk</a>
+				</div>
+				<div class="col-6 text-center">
+					<h3>For photography</h3>
+					<p class="lead">Katie Lee</p>
+					<a href="mailto:" class="btn btn-light btn-lg btn-block"><i class="fa fa-envelope pull-left"></i>katie@beautifulhomesnorth.co.uk</a>
+				</div>
 			</div>
 		</div>
 		<?php if (!empty($form)) { ?>
 		<section class="page-section form-section">
-			<h2 class="header-caps text-center"><span>Send us your photos</span></h2>
+			<h2 class="header-caps text-center"><span>Send us a message</span></h2>
 			<div class="container">	
 				<?php gravity_form($form, false, false, false, '', false); ?>
-			</div>
 		</section>
 		<?php } ?>
 	</article>

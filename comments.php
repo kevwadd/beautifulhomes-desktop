@@ -1,9 +1,9 @@
 <?php if ( post_password_required() ) { return; } ?>
 <a id="reader-comments" name="reader-comments"></a>
 <section id="comments" class="comments-area page-section">
-	<h2 class="header-caps text-center"><span>Reader Comments</span></h2>
-	<div class="container">
-		<?php if ( have_comments() ) { ?>
+	<?php if ( have_comments() ) { ?>
+			<h2 class="header-caps text-center"><span>Reader Comments</span></h2>
+			<div class="container">
 			<h3 class="comments-title">
 				<?php
 				$comments_number = get_comments_number();
@@ -34,7 +34,7 @@
 							'avatar_size' => 100,
 							'style'       => 'ol',
 							'short_ping'  => true,
-							'reply_text'  => '<i class="fa fa-envelope"></i> <span>Reply</span>',
+							'reply_text'  => '<span>Reply</span> <i class="fa fa-comments"></i>',
 						)
 					);
 				?>
@@ -43,10 +43,9 @@
 			<?php
 			the_comments_pagination( array('prev_text' => '<span>Previous</span>','next_text' => '<span>Next</span>') );
 			?>
-					
-			<?php } ?>
+		</div>		
+		<?php } ?>
 			
-	</div>
 		<h2 class="header-caps text-center"><span>Leave a Reply</span></h2>
 		<?php 
 			$args = array(
