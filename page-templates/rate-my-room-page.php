@@ -9,8 +9,6 @@ Template Name: Rate My Room Page
 	<?php 
 	$feat_img = get_the_post_thumbnail_url($post->ID, 'banner-mb-400-133'); 
 	$feat_img_lg = get_the_post_thumbnail_url($post->ID, 'banner-dt-1500-500');
-	$form = get_field('form');
-	echo '<pre>';print_r($form);echo '</pre>';
 	?>
 	<div class="banner-img-slim loading">
 		<div class="container">
@@ -28,7 +26,9 @@ Template Name: Rate My Room Page
 				<?php the_content(); ?>
 			</div>
 		</div>
-		<?php if (!empty($form)) { ?>
+		<?php 
+		$form = get_field('form');
+		if (!empty($form)) { ?>
 		<section class="page-section form-section">
 			<h2 class="header-caps text-center"><span>Send us your photos</span></h2>
 			<div class="container">	
