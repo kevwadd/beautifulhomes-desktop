@@ -1,7 +1,7 @@
 <?php
-$bg_img_sml = get_stylesheet_directory_uri()."/assets/img/ratemyroom-bg-img-sml.png";
-$bg_img_lg = get_stylesheet_directory_uri()."/assets/img/ratemyroom-bg-img.png";
 $rate_my_rooms_pg = get_page_by_path('rate-my-rooms');
+$bg_img_sml = get_the_post_thumbnail_url($rate_my_rooms_pg->ID, 'banner-mb-400-133');
+$bg_img_lg = get_the_post_thumbnail_url($rate_my_rooms_pg->ID, 'banner-dt-1500-500');
 ?>
 <section id="rate-my-room" class="bg-img-section loading">
 	<div class="container">
