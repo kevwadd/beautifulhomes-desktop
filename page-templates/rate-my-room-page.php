@@ -19,17 +19,18 @@ Template Name: Rate My Room Page
 	<?php } ?>
 	<article <?php post_class('single-post'); ?>>
 		<div class="container">
-			<div class="col-7">
-			<div class="main-txt">
-				<?php if (!has_post_thumbnail()) { ?>
-				<h1><?php the_title(); ?></h1>
-				<?php } ?>
-				<?php the_content(); ?>
-			</div>
-			</div>
-			<div class="col-1"></div>
-			<div class="col-4">
-				
+			<div class="row">
+				<div class="col-7">
+				<div class="main-txt">
+					<?php if (!has_post_thumbnail()) { ?>
+					<h1><?php the_title(); ?></h1>
+					<?php } ?>
+					<?php the_content(); ?>
+				</div>
+				</div>
+				<div class="col-5">
+					<div class="covers"></div>
+				</div>
 			</div>
 		</div>
 		<?php 
