@@ -18,12 +18,12 @@ $photos_by = get_field('photos_by');
 			</div>
 			<div class="post-meta text-center">
 				<?php if (!empty($words_by)) { ?>
-				Words: <?php echo $words_by[display_name]; ?><br>
+				Words: <?php echo $words_by['display_name']; ?><br>
 				<?php } else { ?>
 				Words: <?php the_author_meta( 'display_name' , $author_id ); ?><br>
 				<?php } ?>
 				<?php if (!empty($photos_by)) { ?>
-				Photography: <?php echo $photos_by[display_name]; ?>
+				Photography: <?php echo $photos_by['display_name']; ?>
 				<?php } ?>
 			</div>
 			<div class="post-date caps d-flex justify-content-center">
