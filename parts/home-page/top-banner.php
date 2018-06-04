@@ -8,7 +8,8 @@ $feat_img = get_the_post_thumbnail_url($banner_post[0]->ID, 'thumbnail');
 $feat_img_lg = get_the_post_thumbnail_url($banner_post[0]->ID, 'full');
 $words_by = get_field('words_by', $banner_post[0]->ID);
 $photos_by = get_field('photos_by', $banner_post[0]->ID);
-
+$cats = get_the_category( $banner_post[0]->ID );
+//echo '<pre>';print_r($cats);echo '</pre>';
 //echo '<pre>';print_r($words_by);echo '</pre>';	
 ?>
 
@@ -22,7 +23,7 @@ $photos_by = get_field('photos_by', $banner_post[0]->ID);
 		</div>
 		<div class="col-4">
 			<div class="banner-txt d-flex flex-column">
-				<div class="cat-label caps text-center"><span>Category</span></div>
+				<div class="cat-label caps text-center"><span><?php echo $cats[0]->name; ?></span></div>
 				<div class="headline d-flex align-self-stretch">
 					<a href="<?php echo get_permalink($banner_post[0]->ID); ?>" class="align-self-center"><?php echo get_the_title($banner_post[0]); ?></a>
 				</div>

@@ -18,8 +18,7 @@ $hp_posts = get_posts($post_args);
 			$feat_img = get_the_post_thumbnail_url($post->ID, 'thumbnail');
 			$feat_img_lg = get_the_post_thumbnail_url($post->ID, 'large');	
 			$words_by = get_field('words_by');
-			$photos_by = get_field('photos_by');
-			//echo '<pre>';print_r($words_by[display_name]);echo '</pre>';	
+			$photos_by = get_field('photos_by');	
 			?>
 				<li class="col-4">
 					<article <?php post_class("grid-item"); ?>>
