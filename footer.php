@@ -44,6 +44,9 @@
 		</footer><!-- #colophon -->
 		
 	</div><!-- #page -->
+	
+	<?php get_template_part( 'parts/pop-ups/search', 'modal' ); ?>
+	
 <?php wp_footer(); ?>
 
 </body>
