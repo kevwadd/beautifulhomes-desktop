@@ -10,6 +10,11 @@
 	require get_parent_theme_file_path( '/inc/scripts.php' );
 	
 	/**
+	* Editor functions
+	*/
+	require get_parent_theme_file_path( '/inc/editor-functions.php' );
+	
+	/**
 	* ACF functions
 	*/
 	require get_parent_theme_file_path( '/inc/acf-functions.php' );
