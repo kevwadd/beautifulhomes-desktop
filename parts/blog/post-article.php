@@ -10,13 +10,13 @@ $photos_by = get_field('photos_by');
 		<h1 class="headline"><?php the_title(); ?></h1>
 		<div class="post-meta caps">
 			<div class="row">
-				<div class="col-4">
+				<div class="col-3">
 					<i class="fa fa-calendar"></i>  <?php echo get_the_date( 'F j, Y', $top_post ); ?>
 				</div>
-				<div class="col-4">
+				<div class="col-6">
 					<i class="fa fa-tag"></i>  <?php the_category(','); ?>
 				</div>
-				<div class="col-4 text-right">
+				<div class="col-3 text-right">
 					<i class="fa fa-pencil"></i> 
 					<?php if (!empty($words_by)) { ?>
 					<?php echo $words_by['display_name']; ?>
