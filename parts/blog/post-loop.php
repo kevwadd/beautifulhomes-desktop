@@ -13,6 +13,8 @@
 </section>
 <?php else : ?>
 <section class="no-posts-message page-section">
+	<div class="container">
 	<?php get_template_part( 'parts/blog/no', 'posts' );  ?>
+	</div>
 </section>
 <?php endif; ?>
