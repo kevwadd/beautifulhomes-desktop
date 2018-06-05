@@ -26,8 +26,8 @@
 			<div class="footer-btm">
 				<div class="container">
 					<div class="row">
-						<div class="col-6 copyright">
-						Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> <?php bloginfo('description'); ?>. All rights reserved.
+						<div class="col-6">
+							<small class="copyright">Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> <?php bloginfo('description'); ?>. All rights reserved.</small>
 						</div>
 						<div class="col-6">
 						<?php wp_nav_menu(array( 
