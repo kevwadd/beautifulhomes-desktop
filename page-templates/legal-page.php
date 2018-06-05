@@ -17,10 +17,12 @@ Template Name: Legal page template
 	</div>
 	<?php } ?>
 <div class="container">
+	<div class="main-txt">
 	<?php if (!has_post_thumbnail()) { ?>
 	<h1><?php the_title(); ?></h1>
 	<?php } ?>
 	<?php the_content(); ?>
+	</div>
 </div>
 <?php endwhile; ?>
 <?php get_footer(); ?>
