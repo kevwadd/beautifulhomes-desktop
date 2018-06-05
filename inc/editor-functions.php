@@ -14,6 +14,11 @@ function my_mce_before_init( $settings ) {
     		'title' => 'Lead',
     		'selector' => 'p',
     		'classes' => 'lead'
+    	),
+    	array(
+    		'title' => 'Bordered bullets',
+    		'selector' => 'ul',
+    		'classes' => 'bordered'
     	)
     );
 
