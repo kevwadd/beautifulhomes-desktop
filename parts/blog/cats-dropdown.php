@@ -17,7 +17,7 @@ $cats = get_categories($cats_args);
 	  <?php foreach ($cats as $cat) { 
 		$category_id = 	$cat->term_id;
 		?>
-		<a class="dropdown-item" href="<?php echo get_category_link( $category_id ); ?>"><?php echo get_cat_name($category_id); ?></a>
+		<a class="dropdown-item<?php echo (is_category( $category_id )) ? ' active':'' ; ?>" href="<?php echo get_category_link( $category_id ); ?>"><?php echo get_cat_name($category_id); ?></a>
 	<?php } ?>
   </div>
 </div>
