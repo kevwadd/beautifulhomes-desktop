@@ -30,6 +30,12 @@ $photos_by = get_field('photos_by');
 			</div>
 		</div>
 		<div class="main-txt">
-			<?php the_content(); ?>
+			<div class="row">
+				<div class="col"></div>
+				<div class="col-10">
+					<?php the_content(); ?>
+				</div>
+				<div class="col"></div>
+			</div>
 		</div>		
 </article>
