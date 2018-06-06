@@ -19,6 +19,11 @@ function my_mce_before_init( $settings ) {
     		'title' => 'Bordered bullets',
     		'selector' => 'ul',
     		'classes' => 'bordered'
+    	),
+    	array(
+    		'title' => 'Panel',
+    		'block' => 'div',
+    		'classes' => 'info-panel'
     	)
     );
 
