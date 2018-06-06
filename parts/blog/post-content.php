@@ -5,7 +5,10 @@
 
 		<?php get_template_part( 'parts/blog/post', 'article' );  ?>
 		
-		<?php wp_link_pages(); ?>
+		<?php 
+		$args = array('before' => '<div class="post-pagination"><span>Pages:</span> ','after' => '</div>', 'separator' => '<i class="fa fa-angle-right"></i>');
+		wp_link_pages($args);
+		?>
 		
 	<?php endwhile; ?>
 </div>
