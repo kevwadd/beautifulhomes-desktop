@@ -48,4 +48,32 @@ function my_add_next_page_button( $buttons, $id ){
  
     return $buttons;
 }
+//remove_filter( 'the_content', 'wpautop' );
+//add_filter( 'the_content', 'wpautop' , 12);
+
+/*
+function panel_shortcode($attr, $content = null) {
+	
+	extract(shortcode_atts(array(
+        'type' => 'port'
+    ), $attr));
+    
+	return '<div class="info-panel img-'.esc_attr($type).'">'.do_shortcode($content).'</div>';
+}
+
+function row_shortcode($attr, $content = null) {
+	return '<div class="row">'.do_shortcode($content).'</div>';
+}
+function cols6_shortcode($attr, $content = null) {
+	return '<div class="col-6">'.do_shortcode($content).'</div>';
+}
+
+function register_shortcodes(){
+	add_shortcode('row', 'row_shortcode');
+	add_shortcode('col-6', 'cols6_shortcode');
+   add_shortcode('panelBox', 'panel_shortcode');
+}
+
+add_action( 'init', 'register_shortcodes');
+*/
 ?>
