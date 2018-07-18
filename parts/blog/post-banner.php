@@ -1,7 +1,9 @@
 <?php if (has_post_thumbnail()) { ?>
 <?php 
+global $post;
 $feat_img = get_the_post_thumbnail_url($post->ID, 'banner-mb-400-133'); 
 $feat_img_lg = get_the_post_thumbnail_url($post->ID, 'banner-dt-1500-500');
+//echo '<pre>';print_r($feat_img_lg);echo '</pre>';
 ?>
 
 <div class="banner-img-slim">
