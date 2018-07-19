@@ -48,6 +48,25 @@ function my_add_next_page_button( $buttons, $id ){
  
     return $buttons;
 }
+
+function add_login_logout_register_menu( $items, $args ) {
+//echo '<pre>';print_r($args);echo '</pre>';
+ if ( $args->menu != 'Footer right nav' ) {
+ return $items;
+ }
+ 
+ if ( is_user_logged_in() ) {
+ $items .= '<li><a href="' . wp_logout_url() . '">' . __( 'Log Out' ) . '</a></li>';
+ } else {
+ $items .= '<li><a href="' . wp_login_url() . '">' . __( 'Login In' ) . '</a></li>';
+ $items .= '<li><a href="' . wp_registration_url() . '">' . __( 'Sign Up' ) . '</a></li>';
+ }
+ 
+ return $items;
+}
+ 
+add_filter( 'wp_nav_menu_items', 'add_login_logout_register_menu', 199, 2 );
+
 //remove_filter( 'the_content', 'wpautop' );
 //add_filter( 'the_content', 'wpautop' , 12);
 
