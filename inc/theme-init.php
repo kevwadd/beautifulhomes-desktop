@@ -15,8 +15,8 @@ function bhn_setup() {
 		'main' => __( 'Main Links', 'beautifulhomes' ),
 		'footer_left'  => __( 'Footer Left Links', 'beautifulhomes' ),
 		'footer_right'  => __( 'Footer Right Links', 'beautifulhomes' ),
-		'footer_bottom'  => __( 'Footer Bottom Links', 'beautifulhomes' )
-		'mobile_main'  => __( 'Mobile main Links', 'beautifulhomes' )
+		'footer_bottom'  => __( 'Footer Bottom Links', 'beautifulhomes' ),
+		'mobile_main'  => __( 'Mobile main Links', 'beautifulhomes' ),
 		'mobile_footer'  => __( 'Mobile footer Links', 'beautifulhomes' )
 	) );
 
