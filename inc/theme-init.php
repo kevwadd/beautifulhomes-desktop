@@ -16,6 +16,8 @@ function bhn_setup() {
 		'footer_left'  => __( 'Footer Left Links', 'beautifulhomes' ),
 		'footer_right'  => __( 'Footer Right Links', 'beautifulhomes' ),
 		'footer_bottom'  => __( 'Footer Bottom Links', 'beautifulhomes' )
+		'mobile_main'  => __( 'Mobile main Links', 'beautifulhomes' )
+		'mobile_footer'  => __( 'Mobile footer Links', 'beautifulhomes' )
 	) );
 
 	add_theme_support( 'html5', array(
