@@ -1,5 +1,5 @@
 <div id="search-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
 	  <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
       <div class="modal-header">
