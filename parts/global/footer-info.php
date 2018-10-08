@@ -22,7 +22,7 @@
 	</div>
 	
 	<div class="col-6">
-		<h3 class="header-caps">Partners</h3>
+	<!-- <h3 class="header-caps">Partners</h3> -->
 	</div>
 	
 </div>
