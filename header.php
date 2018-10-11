@@ -27,7 +27,7 @@
 				<div class="col-8">
 					<a id="logo" href="<?php echo get_option('home'); ?>/" title="<?php bloginfo('name'); ?>"><span class="sr-only"><?php bloginfo('name'); ?><br><?php bloginfo('description'); ?></span></a>
 				</div>
-				<div class="col-2">
+				<div class="col-2 search">
 					<button id="search-btn" class="btn btn-default btn-block" data-toggle="modal" data-target="#search-modal">Search<i class="fa fa-search"></i></button>
 				</div>
 			</div>
