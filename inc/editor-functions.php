@@ -21,6 +21,11 @@ function my_mce_before_init( $settings ) {
     		'classes' => 'bordered'
     	),
     	array(
+    		'title' => 'List 2 cols',
+    		'selector' => 'ul',
+    		'classes' => 'cols-2'
+    	),
+    	array(
     		'title' => 'Panel',
     		'block' => 'div',
     		'classes' => 'info-panel'
