@@ -13,9 +13,9 @@
 	
 	<header id="masthead" class="header-normal" role="banner">
 		<div class="container">
-			<div class="row">
-				<div class="col-2">
-					<div class="user-links text-center">
+			<div class="row top-row">
+				<div class="col-2 user-links">
+					<div class="text-center">
 						<?php if (is_user_logged_in()) { ?>
 						<a href="<?php echo wp_logout_url(); ?>" title="Login">Logout</a>
 						<?php } else { ?>
@@ -31,7 +31,7 @@
 					<button id="search-btn" class="btn btn-default btn-block" data-toggle="modal" data-target="#search-modal">Search<i class="fa fa-search"></i></button>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row bot-row">
 				<div class="col-10">
 					<nav id="top-nav">
 						<?php wp_nav_menu(array( 
