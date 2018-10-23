@@ -27,8 +27,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<header id="masthead" class="header-normal" role="banner">
 		<div class="container">
 			<div class="row top-row">
-				<div class="col-2 user-links">
-					<div class="text-center">
+				<div class="col-2">
+					<div class="text-center user-links">
 						<?php if (is_user_logged_in()) { ?>
 						<a href="<?php echo wp_logout_url(); ?>" title="Login">Logout</a>
 						<?php } else { ?>
