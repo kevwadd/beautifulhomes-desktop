@@ -6,6 +6,8 @@
 
 <?php get_template_part( 'parts/blog/post', 'content' ); ?>
 
+<?php get_template_part( 'parts/blog/post', 'related' ); ?>
+
 <?php if ( comments_open() || get_comments_number() ) { ?>
 <?php comments_template();  ?>		
 <?php } ?>
