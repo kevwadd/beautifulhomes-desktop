@@ -16,7 +16,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <?php wp_head(); ?>
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/821c8aeb54428e1ce9e9e9755/3932ff1e15061f8def3c0378c.js");</script>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class('desktop'); ?>>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNHPVLZ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -35,6 +35,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<?php } else { ?>
 						<a href="<?php echo wp_login_url( get_permalink() ); ?>" title="Login">Login</a> |  
 						<a href="<?php echo wp_registration_url(); ?>">Register</a>
+<!-- 						<?php echo do_shortcode("[wd_hustle id='subscribe-to-blog' type='slidein']Subscribe[/wd_hustle]"); ?> -->
 						<?php } ?>
 					</div>
 				</div>
