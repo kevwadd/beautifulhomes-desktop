@@ -34,8 +34,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<a href="<?php echo wp_logout_url(); ?>" title="Login">Logout</a>
 						<?php } else { ?>
 						<a href="<?php echo wp_login_url( get_permalink() ); ?>" title="Login">Login</a> |  
-						<a href="<?php echo wp_registration_url(); ?>">Register</a>
-<!-- 						<?php echo do_shortcode("[wd_hustle id='subscribe-to-blog' type='slidein']Subscribe[/wd_hustle]"); ?> -->
+<!-- 						<a href="<?php echo wp_registration_url(); ?>">Register</a> -->
+						<?php echo do_shortcode("[wd_hustle id='subscribe-to-blog' type='slidein']Subscribe[/wd_hustle]"); ?>
 						<?php } ?>
 					</div>
 				</div>
