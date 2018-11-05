@@ -1,4 +1,9 @@
 <?php
+/*
+	update_option( 'siteurl', 'https://www.beautifulhomesinthenorth.co.uk' );
+	update_option( 'home', 'https://www.beautifulhomesinthenorth.co.uk' );
+*/
+	
 	/**
 	* Theme initiate.
 	*/
