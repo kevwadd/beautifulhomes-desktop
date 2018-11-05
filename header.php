@@ -30,8 +30,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="row top-row">
 				<div class="col-2">
 					<div class="text-center user-links">
-						<?php if (is_user_logged_in()) { ?>
+						<?php if (is_user_logged_in()) { 
+						$user_role = restrictly_get_current_user_role();
+						$admin_url = admin_url();	
+						//echo '<pre>';print_r(restrictly_get_current_user_role());echo '</pre>';
+						?>
 						<a href="<?php echo wp_logout_url(); ?>" title="Login">Logout</a>
+						<?php if ($user_role == 'administrator' || $user_role == 'editor') { ?>
+						 | <a href="<?php echo $admin_url; ?>" title="Admin" target="_blank">Admin</a>
+						<?php } ?>
 						<?php } else { ?>
 						<a href="<?php echo wp_login_url( get_permalink() ); ?>" title="Login">Login</a> |  
 <!-- 						<a href="<?php echo wp_registration_url(); ?>">Register</a> -->

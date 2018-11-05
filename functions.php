@@ -72,6 +72,16 @@ function add_login_logout_register_menu( $items, $args ) {
  
 add_filter( 'wp_nav_menu_items', 'add_login_logout_register_menu', 199, 2 );
 
+function restrictly_get_current_user_role() {
+  if( is_user_logged_in() ) {
+    $user = wp_get_current_user();
+    $role = ( array ) $user->roles;
+    return $role[0];
+  } else {
+    return false;
+  }
+ }
+
 //remove_filter( 'the_content', 'wpautop' );
 //add_filter( 'the_content', 'wpautop' , 12);
 
