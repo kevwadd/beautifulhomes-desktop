@@ -11,7 +11,7 @@ $caption = get_the_post_thumbnail_caption($post->ID);
 	<div class="container loading">
 		<div class="bg-img" data-src="<?php echo $feat_img_lg; ?>" style="background-image: url(<?php echo $feat_img; ?>)">
 			<?php if (!empty($caption)) { ?>
-			<caption><?php echo $caption; ?></caption>
+			<div class="caption"><?php echo $caption; ?></div>
 			<?php } ?>
 		</div>
 	</div>
