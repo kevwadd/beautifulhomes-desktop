@@ -75,7 +75,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<a href="<?php bloginfo('rss2_url'); ?>"><span class="sr-only">RSS</span><i class="fa fa-rss fa-lg"></i></a>
 					<a href="mailto:<?php echo $main_email; ?>"><span class="sr-only">Email</span><i class="fa fa-envelope fa-lg"></i></a>
 					<a href="https://www.instagram.com/beautifulhomesinthenorth/" target="_blank"><span class="sr-only">Instagram</span><i class="fa fa-instagram fa-lg"></i></a>
-					
+					<a href="https://www.facebook.com/beautifulhomesinthenorth/" target="_blank"><span class="sr-only">Facebook</span><i class="fa fa-facebook fa-lg"></i></a>
 				</div>
 			</div>
 		</div>
