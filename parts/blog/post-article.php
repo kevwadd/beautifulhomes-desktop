@@ -5,6 +5,8 @@ $feat_img_lg = get_the_post_thumbnail_url($post->ID, 'large');
 $words_by = get_field('words_by');
 $photos_by = get_field('photos_by');
 //$article_imgs = get_field('article_imgs');
+$prim_cat = get_post_meta($post->ID, '_yoast_wpseo_primary_category',true);
+$term = get_category($prim_cat);
 ?>
 <article <?php post_class('single-post'); ?>>
 		<h1 class="headline"><?php the_title(); ?></h1>
@@ -14,7 +16,7 @@ $photos_by = get_field('photos_by');
 					<i class="fa fa-calendar"></i>  <?php echo get_the_date( 'F j, Y', $top_post ); ?>
 				</div>
 				<div class="col-6">
-					<i class="fa fa-tag"></i>  <?php the_category(','); ?>
+					<i class="fa fa-tag"></i>  <?php echo $term->name; ?>
 				</div>
 				<div class="col-3 text-right">
 					<i class="fa fa-pencil"></i> 
