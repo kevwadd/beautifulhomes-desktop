@@ -3,6 +3,9 @@ function bhn_scripts() {
 
 	wp_enqueue_style( 'bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', null, '4.0.0', 'screen' );
 	wp_enqueue_style( 'fontawesome-css', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', null, '4.7.0', 'screen' );
+	wp_enqueue_style( 'animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css', null, '3.7.0', 'screen' );
+	
+	
 	if (!wp_is_mobile()) {
 	wp_enqueue_style( 'bhn-style', get_stylesheet_directory_uri() . '/assets/css/styles.css', null,  filemtime( get_stylesheet_directory().'/assets/css/styles.css' ), 'screen'  );
 	}
